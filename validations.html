@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="myforms" onsubmit="return validateForm()" method="post">
+    First Name:
+    <input style=" text-transform:capitalize ;" type="text" name="fname" id=""><br><br>
+    Last Name:
+    <input style="text-transform: capitalize;" type="text" name="firstname" id=""><br><br>
+    Email:
+    <input type="Email" name="email1" id=""><br> <br>
+    <button>Save</button>
+    <script>
+        function validateForm(){
+            let x = document.forms['myforms']['fname'].value;
+            let a = document.forms['myforms']['firstname'].value;
+            let e = document.forms['myforms']['email1'].value;
+
+            if(x == ""){
+                alert("First name must be filled out");
+                return false;
+            }
+            else if ( a == ""){
+                alert("Last Name must added");
+                return false;
+            }
+
+            else if(e == ""){
+                alert("Email must added")
+                return false;
+            }
+        }
+    </script>
+
+
+</form>
+</body>
+</html>

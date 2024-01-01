@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" id="myCheckbox" onclick="hideTable()">
+    <label for="myCheckbox"> </label>
+    <table id="myTable"  border="1">
+        <tr>
+            <th>Check</th>
+            <th>No</th>
+            <th>Remark</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="" id=""></td>
+            <td>01</td>
+            <td><input type="text" name="" id="" placeholder="Enter" ></td>
+            <td>Active</td>
+
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="" id="checkbox"></td>
+            <td>02</td>
+            <td><input type="text" name="" id="" placeholder="Enter" ></td>
+            <td id="text">Active</td>
+        </tr>
+
+    </table>
+    <script>
+         var check =document.getElementById('checkbox')
+        var test =document.getElementById('text')
+        check.addEventListener('click',function(){
+          if(this.checked){
+            document.getElementById('text').style.color='red'
+          }
+        });
+
+        function hideTable() {
+            var table = document.getElementById("myTable");
+            var checkbox = document.getElementById("myCheckbox");
+
+            if (checkbox.checked) {
+                table.style.display = "none"; // Hide the table
+            } else {
+                table.style.display = "flex"; // Show the table
+            }
+        }
+    </script>
+</body>
+</html>

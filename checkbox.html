@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+</style>
+</style>
+<body>
+    <form action="">
+        <label for="checkbox"></label>
+    <input   type="checkbox" name="" id="checkbox"><br>
+    <label for="text"></label>
+    <input type="text" name="" id="text"  disabled>
+</form>
+    <script>
+         const checkbox = document.getElementById('checkbox')
+         const  textInput = document.getElementById('text')
+         
+         checkbox.addEventListener('change',function(){
+            if(checkbox.checked){
+                textInput.removeAttribute('disabled');
+
+            }
+            else{
+                textInput.setAttribute('disabled','true')
+            }
+         });
+
+          
+    </script>
+</body>
+</html>

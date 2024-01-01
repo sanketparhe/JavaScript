@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="colorCheckbox">Change Text color</label>
+    <input type="checkbox" name="" id="colorCheckbox">
+    <p id="textToChange">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error rerum culpa maxime quaerat,
+        nulla voluptatem distinctio dolorem molestiae quasi reiciendis non, necessitatibus fuga. Perspiciatis dolor
+        suscipit, debitis reprehenderit quisquam iste?</p>
+
+        <script>
+            const checkbox = document.getElementById('colorCheckbox');
+            const text = document.getElementById('textToChange');
+            checkbox.addEventListener("change", function() {
+            if (checkbox.checked) {
+                text.style.color = "red";
+            } else {
+                text.style.color = "black";
+            }
+        });
+        </script>
+</body>
+
+</html>

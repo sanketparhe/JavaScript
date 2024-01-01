@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="colorCheckbox">Change Text Color</label>
+    <input type="checkbox" id="colorCheckbox" onchange="changeTextColor()">
+    <p id="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit.   Esse nemo eligendi quibusdam dicta
+        placeat labore nihil exercitationem animi hic repellat fugit,   culpa laudantium ducimus enim minima iusto.  
+        Voluptatem, cupiditate officia?</p>
+   
+    <script>
+        function changeTextColor() {
+            const checkbox = document.getElementById("colorCheckbox");
+            const text = document.getElementById("p1");
+            if (checkbox.checked) {
+                text.style.color = "red";
+            } 
+            else {
+                text.style.color = "black";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

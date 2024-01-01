@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #id1{
+        color: red;
+        background-color:lightblue;
+    }
+</style>
+<body>
+    <form action="" name="myforms" onsubmit="return validateForm()" method="post">
+    id1:
+    <input type="text" name="" id="id1"><br><br>
+    
+    <p id="red" style="color: red;"></p>
+
+    id2:
+    <input type="text" name="" id="id2"><br><br>
+    <button>Add</button>
+
+</form>
+    <script>
+function validateForm(){
+    let a = document.getElementById('id1').value;
+    let b = document.getElementById('id2').value;
+    if(a == " "){
+                document.getElementById('red').innerHTML='name must required';
+            }
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="func()">Click me</button>
+    <p id="p1"></p>
+
+
+    <script>
+
+       
+
+        function outer(){
+            let counter=0;
+           function inner(){
+            counter++;
+            console.log(counter)
+            return counter;
+
+           }
+           return inner
+        }
+        const fn = outer()
+        fn()
+        fn()
+        fn()
+
+        function func(){
+            const counterValue=fn();
+            document.getElementById('p1').innerHTML=counterValue;
+        }
+
+    
+        
+    </script>
+    
+
+</body>
+</html>

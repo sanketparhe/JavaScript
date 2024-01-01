@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .div1 {
+        border: 1px solid black;
+        height: 100px;
+
+    }
+
+    .div2 {
+        border: 1px solid black;
+        height: 100px;
+    }
+</style>
+
+<body>
+    <div class="div1"></div><br>
+    <div class="div2"></div><br>
+    <div class="div2"></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quisquam perspiciatis temporibus
+        architecto odio doloribus consectetur tenetur ipsam quam deserunt nam ea eum consequatur, labore, ratione dolore
+        corrupti rem quae?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae amet harum molestias vel dignissimos nisi,
+        aliquam perspiciatis nesciunt! Neque temporibus ex repudiandae dolor dolores iure iste commodi modi praesentium
+        animi!</p>
+        
+         
+    <script>
+
+        
+        const c = document.getElementsByClassName('div1')
+        c[0].style.width = '60%'
+        
+
+        const a = document.getElementsByClassName('div2')
+        a[0].style.backgroundColor = 'red'
+        a[1].style.backgroundColor = 'orange'
+        a[0].style.width = '60%'
+        a[1].style.width = '60%'
+
+        const b = document.getElementsByTagName('p')
+        b[1].style.fontSize = '30px'
+        b[1].style.color = 'lightblue'
+        
+        
+
+
+    </script>
+</body>
+
+</html>

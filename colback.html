@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function ABC(name, city,subject,country){
+            alert('EnterName' + name + '/nEnterCity' + city + "/nsubject"+subject+ '/nEnterCountry' +country);
+        }
+         
+        function XYZ(callback){
+            var name=prompt('Enter Name')
+            var city=prompt('Enter city')
+            var subject=prompt('Enter subject')
+            var country=prompt('Enter country')
+            callback(name,city,subject,country)
+        }
+
+         XYZ(ABC)
+         
+    </script>
+</body>
+</html>
